@@ -1,0 +1,64 @@
+USE [ABBRCS]
+GO
+
+/****** Object:  Table [dbo].[Roles]    Script Date: 9/15/2018 7:40:30 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Roles](
+	[RoleId] [int] NOT NULL,
+	[RoleName] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_Roles] PRIMARY KEY CLUSTERED 
+(
+	[RoleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+USE [ABBRCS]
+GO
+
+/****** Object:  Table [dbo].[Users]    Script Date: 9/15/2018 7:40:55 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Users](
+	[UserId] [int] IDENTITY(1,1) NOT NULL,
+	[Username] [nvarchar](20) NOT NULL,
+	[Password] [nvarchar](20) NOT NULL,
+	[Email] [nvarchar](30) NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[LastLoginDate] [datetime] NULL,
+	[RoleId] [int] NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Users]  WITH CHECK ADD  CONSTRAINT [FK_Users_Roles] FOREIGN KEY([RoleId])
+REFERENCES [dbo].[Roles] ([RoleId])
+GO
+
+ALTER TABLE [dbo].[Users] CHECK CONSTRAINT [FK_Users_Roles]
+GO
+
+INSERT INTO Roles
+SELECT 1, 'Administrator'
+UNION ALL
+SELECT 2, 'User'
+GO
+TRUNCATE TABLE Users
+GO
+INSERT INTO Users
+SELECT 'Admin', '12345', 'mudassar@aspsnippets.com', GETDATE(), NULL, 1
+UNION ALL
+SELECT 'Mudassar', '12345', 'mudassar@aspsnippets.com', GETDATE(), NULL, 2
+GO

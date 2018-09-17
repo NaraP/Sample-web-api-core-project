@@ -1,0 +1,10 @@
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\bin\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.deps.json
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\bin\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.runtimeconfig.json
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\bin\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.runtimeconfig.dev.json
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\bin\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.dll
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\bin\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.pdb
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\obj\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.csproj.CoreCompileInputs.cache
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\obj\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.AssemblyInfoInputs.cache
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\obj\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.AssemblyInfo.cs
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\obj\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.dll
+E:\ABBProject\ABBSQL\ABB.RCS.SystemManagament\ABB.RCS.SystemManagament\obj\Debug\netcoreapp2.0\ABB.RCS.SystemManagament.pdb
